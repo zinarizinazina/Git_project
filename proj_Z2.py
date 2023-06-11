@@ -9,5 +9,8 @@ f = (a - b * 10000 - c * 1000 - d * 100 - e * 10) // 1
 print (b, c, d, e, f)
 R1 = e ** f
 R2 = R1 * d
-R = R2 / (b - c)
-print(R)
+if b != c :
+    R = R2 / (b - c)
+    print(R)
+else:    
+    print('Деление на 0 невозможно')
